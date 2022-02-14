@@ -1,0 +1,39 @@
+¿Es posible ejecutar un programa en java que contenga varias clases con métodos main? En caso positivo, 
+¿cómo se determina el punto de entrada a un programa?
+
+Si es posible pero hay que tomar encuenta que el JVM va identificar primero el metodo que viene por efecto.
+se puede hacer por ejemplo de esta forma
+
+ public static void main(String[] args) {
+        System.out.println("Method 1");
+        main(2.0);
+        main("");
+    }
+    
+    public static void main(Double args) {
+        System.out.println("Method 2");
+    }
+    
+    public static void main(String args) {
+        System.out.println("Method 3");
+    }
+
+
+Otro ejemplo es:
+
+public class VariosMain{
+ 
+  public static void main(String[] arg){
+      main(1);
+      main('x');
+  }
+ 
+  public static void main(int i){
+     
+  }
+ 
+  public static void main(chat i){
+    
+  }
+ 
+}
