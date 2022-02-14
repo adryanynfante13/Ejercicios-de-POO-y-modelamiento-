@@ -1,4 +1,4 @@
-# Ejercicios-de-POO-y-modelamiento-
+# Ejercicios-de-POO-y-modelamiento
 ### JAVA
 
 ### Ejercicio #1
